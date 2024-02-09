@@ -8,7 +8,12 @@ import { About } from "./pages/About";
 
 const router = createBrowserRouter([
   {
-    element: <Header />,
+    element: (
+      <>
+        <Header />,
+        <Footer />
+      </>
+    ),
     children: [
       {
         path: "/",
@@ -18,21 +23,17 @@ const router = createBrowserRouter([
         path: "/about",
         element: <About />
       },
-      {
-        path: "/resume",
-        element: <div>RESUME PAGE</div>
-      }
-    ]
+      // {
+      //   path: "/resume",
+      //   element: <div>RESUME PAGE</div>
+      // }
+    ],
   }
 ])
 
 function App() {
   return (
     <div className=" h-screen bg-[#fcfcfc] font-nunito">
-      {/* <Header /> */}
-      {/* <HeroSection /> */}
-      {/* <Projects /> */}
-      {/* <Footer /> */}
       <RouterProvider router={router} />
     </div>
   );
