@@ -36,8 +36,6 @@ export const Card = () => {
             {/* information */}
             <div className="text-[#71717a] sm:text-sm">{item.info}</div>
             <div className="text-[#71717a] mt-2 font-normal sm:text-sm">{item.techtitle}</div>
-            {/* ---------- */}
-            {/* <div>_______________</div> */}
             {/* button */}
             <div className=" flex justify-around mt-2">
               <button className=" text-white p-2 bg-sky-800 font-bold px-4 rounded hover:bg-sky-500 transition duration-500 ease-in-out"><a href={item.code} target="_blank" rel="noreferrer">View Code</a></button>

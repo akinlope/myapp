@@ -57,8 +57,6 @@ export const About = () => {
             y: [10, -10, 10, -10, 10],
             transition: { repeat: Infinity, duration: 10, easings: easeInOut },
           }}
-          // initial={{y: 0}}
-          // animate={{y: [-10], transition:{repeat: Infinity, ease: easeInOut, duration: 2}}}
           src={svg1}
           alt="Programmer svg icon"
         />

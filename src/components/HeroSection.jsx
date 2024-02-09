@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import hero from "../image/hero.jpg";
 
 export const HeroSection = () => {
-  const imgControls = useAnimation();
   const [hover, setHover] = useState(false);
 
   const hoverEffect = {
@@ -16,10 +15,6 @@ export const HeroSection = () => {
     },
   };
 
-  // const imgVarients = {
-  //   hover: {y: [30, 0]},
-  //   initial: {y: 30}
-  // }
   return (
     // parent Div  
     <div className=" lg:flex md:flex sm:flex-col lg:mx-20 md:mx-10 sm:mx-5 lg:p-12 md:p-12 sm:mt-20">
@@ -48,38 +43,13 @@ export const HeroSection = () => {
             animate={`${hover ? "animate" : "false"}`}
           >
             <img
-              // variants={imgVarients}
-              // initial="initial"
-              // animate={imgControls}
-              //   whileHover={{ transition: {duration: 1} }}
-              //   transition={{
-              //     duration: 1.5,
-              //     ease: "easeInOut",
-              //   }}
               className=" rounded-full sm:mt-10"
               src={hero}
               alt=""
-              // onHoverStart={()=> {imgControls.start("hover")}}
-              // onHoverEnd={()=> {imgControls.start("initial")}}
             />
           </motion.div>
         </div>
       </div>
-      {/* <div className=" w-2/4 justify-center flex">
-        <div className=" w-2/3 h-2/3">
-          <motion.img
-            whileHover={{ y: [10, -10] }}
-            transition={{
-              duration: 1.5,
-              ease: "easeInOut",
-              repeatType: "mirror",
-            }}
-            className=" rounded-full"
-            src={hero}
-            alt=""
-          ></motion.img>
-        </div>
-      </div> */}
     </div>
   );
 };
