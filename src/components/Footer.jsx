@@ -5,7 +5,7 @@ import { MdEmail} from "react-icons/md";
 
 export const Footer = () => {
   return (
-    <div className=" pb-5 border-t-2 flex mx-8 justify-evenly">
+    <div className=" pb-5 border-t-2 flex mx-8 justify-evenly items-center">
       <div className=" pt-5 ">
         <span className=" text-[#71717a] font-bold lg:text-lg md:text-lg sm:text-xs">
           &copy; 2023 Copyright: Tolulope

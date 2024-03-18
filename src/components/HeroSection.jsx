@@ -34,7 +34,7 @@ export const HeroSection = () => {
 
       {/* Image */}
       <div className="lg:w-2/4 md:w-1/2 sm:w-full sm:flex sm:justify-center">
-        <div className=" lg:w-2/3 md:w-2/3 h-2/3  lg:ml-auto md:ml-auto sm:flex sm:justify-center">
+        <div className=" lg:w-2/3 md:w-2/3 h-2/3  lg:ml-auto md:ml-auto sm:flex sm:justify-center sm:w-4/5 sm:h-4/5">
           <motion.div
             onMouseEnter={() => {
               setHover(true);

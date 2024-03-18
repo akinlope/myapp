@@ -10,17 +10,17 @@ const cardVariants = {
 export const Card = () => {
 
   return (
-    <motion.div className=" lg:flex md:flex sm:flex-col lg:justify-between md:justify-between mt-10 lg:mx-20 md:mx-10 sm:mx-5"
+    <motion.div className=" lg:flex md:flex sm:flex-col lg:justify-between md:justify-between mt-10 lg:mx-20 md:mx-10 sm:mx-5 flex-wrap gap-10"
     initial="hidden"
       animate="visible"
       variants={cardVariants}
       transition={{ duration: 1.5, ease: "easeInOut" }}
     >
-      {data.map((item, index) => {
+      {data.map((item) => {
         return (
           <motion.div
-            key={index}
-            className=" bg-slate-100 border rounded p-4 lg:w-[45%] md:w-[45%] sm:mt-10"
+            key={item.id}
+            className=" bg-slate-100 border rounded p-4 lg:w-[45%] md:w-[45%] sm:mt-10 "
             variants={cardVariants}
           >
             <img
