@@ -20,11 +20,11 @@ export const Card = () => {
         return (
           <motion.div
             key={item.id}
-            className=" bg-slate-100 border rounded p-4 lg:w-[45%] md:w-[45%] sm:mt-10 "
+            className=" bg-slate-100 border rounded p-4 lg:w-[45%] md:w-[45%] sm:mt-10 overflow-hidden"
             variants={cardVariants}
           >
             <img
-              className=" rounded"
+              className=" object-contain rounded-t-md md:hover:scale-110 lg:hover:scale-110 transition duration-500 ease-in-out"
               width={800}
               height={100}
               src={item.img}
